@@ -85,8 +85,6 @@ function draw(){
               pixels[lastPixel - index -0] =a;
             }
             
-            
-            
         }
     }
     
@@ -105,6 +103,10 @@ function ghost(index, r, g, a,){
  pixels[index + 2] = r;
  pixels[index + 3] = a; 
 }
-
-
+function gone(index, r){
+ pixels[index] = r;
+ pixels[index + 1] = g;
+ pixels[index + 2] = 0;
+ pixels[index + 3] = a;
+}
 
